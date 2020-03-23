@@ -90,6 +90,7 @@ nav ul li a:hover {
 #menu, #reviews, #contact {
   height: auto;
   border-top: 1px solid #dedbdc;
+  box-sizing: border-box;
 }
 #menu {
   padding-left: 10px;
