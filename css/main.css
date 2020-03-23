@@ -1,0 +1,131 @@
+/*** FONTS ***/
+@font-face {
+  font-family: 'Wisdom Script';
+  src: url('./fonts/wisdom-script.otf') format('opentype');
+}
+/*** BASE STYLES ***/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  color: #000000;
+  box-sizing: border-box;
+}
+h1, h2, h3, h4 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 18px;
+}
+h3 {
+  font-size: 12px;
+}
+h4 {
+  font-size: 16px;
+}
+/*** GRID LAYOUT ***/
+.half-width {
+  width: 50%;
+  float: left;
+}
+.third-width {
+  width: 31.7%;
+  float: left;
+}
+/*** HEADER ***/
+header h1 {
+  padding: 20px 10px;
+}
+header h1 span {
+  color: #77a466;
+}
+nav {
+  float: right;
+  padding: 20px 10px;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #77a466;
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+nav ul li a:hover {
+  color: black;
+}
+/*** TOP ***/
+.hero-image {
+  height: 288px;
+  background: url('../img/hero-image.png');
+  background-size: cover;
+  border-top: 3px solid #77a466;
+  border-bottom: 3px solid #77a466;
+  clear: both;
+}
+#top {
+  padding: 0 10px;
+}
+#top h2 {
+  color: #77a466;
+  padding-top: 10px;
+}
+#top p {
+  line-height: 25px;
+  padding-bottom: 20px;
+}
+/*** BOTTOM ***/
+#menu, #reviews, #contact {
+  height: auto;
+  border-top: 1px solid #dedbdc;
+}
+#menu {
+  padding-left: 10px;
+}
+#menu h4 {
+  font-weight: 400;
+  line-height: 18px;
+  color: #77a466;
+}
+#reviews, #contact {
+  padding: 0 10px;
+}
+#reviews {
+  border-right: 1px solid #dedbdc;
+  border-left: 1px solid #dedbdc;
+}
+/*** FOOTER ***/
+footer {
+  text-align: center;
+  clear: both;
+  border-top: 1px solid #dedbdc;
+}
+footer span {
+  font-family: 'Wisdom Script', cursive;
+  text-transform: none;
+  color: #77a466;
+}
+@media screen and (max-width: 600px) {
+  .half-width, .third-width, .full-width {
+    width: 80%;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    }
+    #reviews {
+      border-right: none;
+      border-left: none;
+    }
+}
